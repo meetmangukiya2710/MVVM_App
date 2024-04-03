@@ -78,8 +78,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let navigate = storyboard?.instantiateViewController(identifier: "DidDelectNewsViewController") as! DidDelectNewsViewController
         
-        navigate.titleLable = newdataArray?.articles?[indexPath.row].title ?? "..."
-        navigate.descriptionLable = newdataArray?.articles?[indexPath.row].description ?? "..."
+        navigate.titleLable = newdataArray?.articles?[indexPath.row].title ?? "....."
+        navigate.descriptionLable = newdataArray?.articles?[indexPath.row].description ?? "....."
         
         navigationController?.pushViewController(navigate, animated: true)
     }
